@@ -1,0 +1,65 @@
+.BannerSection {
+    width: 100%;
+    background: var(--green-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--main-font);
+
+    .container {
+        width: 80%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .wppBtn {
+            width: 180px;
+            height: 37px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            border: 1px var(--yellow-border) solid;
+            border-radius: 15px;
+            font-size: .8125rem;
+            font-weight: 900;
+            color: #ffffff;
+            cursor: pointer;
+
+            &:hover {
+                box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            }
+        }
+    }
+
+    .containerImg {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    .BannerSection {
+        img {
+            width: 93px;
+        }
+
+        .container {
+            width: 90%;
+            margin-top: 10px;
+
+            .wppBtn {
+                .wppIcon {
+                    width: 19px;
+                }
+
+                width: 130px;
+                font-size: .625rem;
+            }
+        }
+    }
+}
