@@ -5,27 +5,32 @@ import wpp from "./../assets/whatsapp.svg";
 import { useWindowSize } from "react-use";
 import styled from "./style.module.scss"
 
-export function Banner () {
+export function Banner() {
 
-    const {width} = useWindowSize();
+    const { width } = useWindowSize();
 
-    return(
+    return (
         <section className={styled.BannerSection}>
-        <div className={styled.container}>
-            <img src={logo} alt="logo da cidade eco" />
-            <a className={styled.wppBtn}>
-                <img className={styled.wppIcon} src={wpp} alt="logo do whatsapp" />
-                <span>Entrar em contato</span>
-            </a>
-        </div>
-        <div className={styled.containerImg}>
-            {
-                width > 1023 ?
-                <img src={bannerEco} alt="banner sobre a cidade eco" />
-                :
-                <img src={bannerEcoSm} alt="banner sobre a cidade eco" />
-            }
-        </div>
+            <div className={styled.container}
+                data-aos="fade-up"           // O tipo da animação
+                data-aos-delay="300"         // Espera 300ms antes de começar (ótimo para sequências)
+                data-aos-duration="1000"     // Duração da animação (1 segundo)
+                data-aos-easing="ease-in-out" // Curva de aceleração
+                data-aos-once="true">
+                <img src={logo} alt="logo da cidade eco" />
+                <a className={styled.wppBtn}>
+                    <img className={styled.wppIcon} src={wpp} alt="logo do whatsapp" />
+                    <span>Entrar em contato</span>
+                </a>
+            </div>
+            <div className={styled.containerImg}>
+                {
+                    width > 1023 ?
+                        <img src={bannerEco} alt="banner sobre a cidade eco" />
+                        :
+                        <img src={bannerEcoSm} alt="banner sobre a cidade eco" />
+                }
+            </div>
         </section>
     )
 }

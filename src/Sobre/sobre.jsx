@@ -4,7 +4,7 @@ import styled from "./style.module.scss";
 export function Sobre() {
 
     return (
-        <section className={styled.Sobre}>
+        <section className={styled.Sobre} data-aos="fade-up">
             <div className={styled.container}>
                 <img src={LogoCidadeEco} alt="logo da cidade eco" />
 
