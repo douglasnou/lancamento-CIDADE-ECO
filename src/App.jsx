@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Lote } from "./Lote/Lote";
+import { Cidade } from "./Cidade/Cidade";
 
 
 function App() {
@@ -21,10 +22,11 @@ function App() {
 
   return (
     <>
-    <Banner />
-    <Sobre />
-    <Lugar />
-    <Lote />
+      <Banner />
+      <Sobre />
+      <Cidade />
+      <Lugar />
+      <Lote />
     </>
   )
 }

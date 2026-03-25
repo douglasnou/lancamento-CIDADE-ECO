@@ -1,0 +1,48 @@
+.cidade{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--main-font);
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .banner{
+            width: 100%;
+        }
+        .textContainer{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("./../assets/bkg-cidade.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            .text{
+                width: 60%;
+                margin: 30px auto;
+            }
+        }
+    }
+}
+@media(max-width: 800px){
+    .cidade{
+        .container{
+            .textContainer{
+                background-image: url("./../assets/bkg-cidade-sm.png");
+                .text{
+                    width: 75%;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    line-height: 20px;
+                    color: #000000;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

@@ -1,3 +1,4 @@
+import { Formulario } from "../Formulario/Formulario";
 import rocket from "./../assets/foguete.svg";
 import styled from "./style.module.scss";
 
@@ -21,8 +22,8 @@ export function Lote() {
                     </div>
                 </div>
 
-                <div>
-                    espaço do formulário
+                <div className={styled.form}>
+                    <Formulario/>
                 </div>
             </div>
         </section>
