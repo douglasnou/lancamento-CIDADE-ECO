@@ -1,0 +1,50 @@
+.escolha {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--main-font);
+
+    .container {
+        width: 100%;
+        background: var(--green-background);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .textContainer {
+            width: 60%;
+            margin: 30px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            span {
+                font-size: 2rem;
+                font-weight: 600;
+                color: var(--yellow-font);
+                text-transform: uppercase;
+            }
+
+            h2 {
+                font-size: 4rem;
+                font-weight: 700;
+                color: #FFFFFF;
+
+                italic {
+                    font-style: italic;
+                }
+            }
+        }
+    }
+    img{
+        margin: 30px auto;
+            width: 60%;
+        }
+}
+
+@media(max-width: 800px){
+    
+}

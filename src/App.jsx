@@ -7,6 +7,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Lote } from "./Lote/Lote";
 import { Cidade } from "./Cidade/Cidade";
+import { Parque } from "./Parque/Parque";
+import { Escolha } from "./Escolha/Escolha";
 
 
 function App() {
@@ -27,6 +29,8 @@ function App() {
       <Cidade />
       <Lugar />
       <Lote />
+      <Escolha />
+      <Parque />
     </>
   )
 }

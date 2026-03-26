@@ -1,0 +1,174 @@
+.parque {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--main-font);
+    margin-top: 25px;
+
+    .container {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .text {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                color: var(--yellow-font);
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: 1.25rem;
+            }
+
+            h2 {
+                color: var(--green-background);
+                font-size: 4rem;
+                font-weight: 500;
+
+                strong {
+                    color: var(--yellow-font);
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .imgList {
+            width: 100%;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            ul {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+
+                li {
+                    width: 30%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .textList {
+            width: 100%;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            div {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+
+                h3 {
+                    width: 50%;
+                    color: #323232;
+                    font-size: 1.25rem;
+                    font-weight: 700;
+                }
+
+                ul {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 10px;
+
+                    li {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        //justify-content: center;
+                        gap: 5px;
+                        color: #323232;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    .parque {
+        .container {
+            width: 90%;
+
+            .text {
+                span {
+                    font-size: .875rem;
+                }
+
+                h2 {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .imgList {
+                img {
+                    width: 100%;
+                    height: auto;
+                    display: block; // Evita espaços vazios embaixo da imagem
+                    object-fit: cover; // Se quiser que todas tenham o mesmo tamanho
+                }
+            }
+
+            .textList{
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: first baseline;
+                justify-content: space-between;
+                div{
+                    width: 50%;
+                    margin-top: 15px;
+                    h3{
+                        width: 100%;
+                        text-align: left;
+                        font-size: .6875rem;
+                    }
+
+                    ul{
+                        width: 100%;
+                        li{
+                            font-size: .75rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* No seu arquivo de estilo do carrossel */
+
+:global {
+  // Cor da bolinha quando NÃO está selecionada
+  .swiper-pagination-bullet {
+    background: #ffffff; // Exemplo: Branco
+    opacity: 0.5;
+  }
+
+  // Cor da bolinha ATIVA (a selecionada)
+  .swiper-pagination-bullet-active {
+    background: #006D35; // Use a cor verde da Cidade Eco ou a que preferir
+    opacity: 1;
+  }
+}
