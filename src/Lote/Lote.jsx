@@ -4,7 +4,7 @@ import styled from "./style.module.scss";
 
 export function Lote() {
     return (
-        <section className={styled.Lote}>
+        <section className={styled.Lote} id="formulario">
             <div className={styled.container}>
                 <div className={styled.containerLote}>
                     <h2>

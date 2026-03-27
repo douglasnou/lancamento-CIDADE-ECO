@@ -46,7 +46,7 @@ export function Localizacao() {
                         Pronto para dar o <span>próximo passo?</span>
                     </h3>
                     <p>
-                        Fale com um especialista agora e descubra as melhores condições para garantir seu lote na Cidade ECO Pedreiras.
+                        Fale com um especialista agora e descubra as melhores condições para <span>garantir seu lote na Cidade ECO Pedreiras.</span>
                     </p>
                     <div className={styled.buttons}>
                         <button className={styled.verde}>

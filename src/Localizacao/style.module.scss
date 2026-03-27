@@ -194,6 +194,7 @@
 
             .footer {
                 padding: 10px;
+
                 h3 {
                     font-size: 1.50rem;
                 }
@@ -201,17 +202,24 @@
                 p {
                     font-size: 1rem;
                     text-align: center;
+
+                    span {
+                        color: #B8C429;
+                    }
                 }
 
                 .buttons {
                     width: 90%;
+
                     button {
                         width: 45%;
+
                         a {
                             width: 100%;
                             padding: 10px;
-                            img{
-                                width: 20%;
+
+                            img {
+                                width: 25%;
                             }
 
                             span {

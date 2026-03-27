@@ -1,6 +1,5 @@
 .BannerSection {
     width: 100%;
-    margin-top: 60px;
     background: var(--green-background);
     display: flex;
     flex-direction: column;
@@ -8,9 +7,6 @@
     font-family: var(--main-font);
 
     .container {
-        position: fixed;
-        top: 0;
-        background: var(--green-background);
         width: 100%;
         padding: 25px;
         display: flex;
