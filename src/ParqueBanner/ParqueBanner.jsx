@@ -19,7 +19,8 @@ export function ParqueBanner() {
                 }
             </div>
             <button className={styled.btn}>
-                <a>
+                <a href="https://api.whatsapp.com/send/?phone=5598991120576&text=Oi!+Quero+garantir+meu+lote+na+Cidade+Eco.+Gostaria+de+mais+informações&type=phone_number&app_absent=0"
+                target="_blank">
                     <img src={Arvore} alt="emoji de árvore" />
                     <span>Quero morar pertinho do Parque</span>
                 </a>

@@ -18,7 +18,9 @@ export function Banner() {
                 data-aos-easing="ease-in-out" // Curva de aceleração
                 data-aos-once="true">
                 <img src={logo} alt="logo da cidade eco" />
-                <a className={styled.wppBtn}>
+                <a className={styled.wppBtn}
+                    href="https://api.whatsapp.com/send/?phone=5598991120576&text=Oi!+Quero+garantir+meu+lote+na+Cidade+Eco.+Gostaria+de+mais+informações&type=phone_number&app_absent=0"
+                    target="_blank">
                     <img className={styled.wppIcon} src={wpp} alt="logo do whatsapp" />
                     <span>Entrar em contato</span>
                 </a>

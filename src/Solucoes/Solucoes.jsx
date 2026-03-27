@@ -1,4 +1,5 @@
 import solucoes from "../assets/solucoes.svg";
+import solucoesSm from "../assets/solucoes-sm.svg";
 import solucoesDois from "../assets/solucoes-2.svg";
 import cardOne from "../assets/s01.svg";
 import cardTwo from "../assets/s02.svg";
@@ -20,7 +21,12 @@ export function Solucoes() {
         <section className={styled.solucoes}>
             <div className={styled.container}>
                 <h2>Soluções Ambientais</h2>
-                <img className={styled.banner} src={solucoes} />
+                {
+                    width >= 800 ?
+                    <img className={styled.banner} src={solucoes} />
+                    :
+                    <img className={styled.banner} src={solucoesSm} />
+                }
                 {
                     width >= 800 ?
                         <img className={styled.banner} src={solucoesDois} />
@@ -36,7 +42,7 @@ export function Solucoes() {
                         </ul>
                 }
                 <button>
-                    <a href="">
+                    <a href="#formulario">
                         <span>clique aqui e um especialista entrará em contato com você</span>
                         <img src={click}/>
                     </a>

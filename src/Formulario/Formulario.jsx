@@ -21,7 +21,7 @@ export function Formulario() {
     };
 
     return (
-        <section className={styled.formSection}>
+        <section className={styled.formSection} id='formulario'>
             <div className={styled.container}>
                 <h2>Quero conhecer a Cidade ECO</h2>
                 <p>Preencha seus dados e receba atendimento exclusivo</p>

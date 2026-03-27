@@ -50,7 +50,7 @@ export function Localizacao() {
                     </p>
                     <div className={styled.buttons}>
                         <button className={styled.verde}>
-                            <a href="">
+                            <a href="#formulario">
                                 <img src={prancheta} alt="" />
                                 <span>
                                     Preencher o formulário
@@ -58,7 +58,8 @@ export function Localizacao() {
                             </a>
                         </button>
                         <button className={styled.branco}>
-                            <a href="">
+                            <a href="https://api.whatsapp.com/send/?phone=5598991120576&text=Oi!+Quero+garantir+meu+lote+na+Cidade+Eco.+Gostaria+de+mais+informações&type=phone_number&app_absent=0"
+                                target="_blank">
                                 <img src={zap} alt="" />
                                 <span>
                                     Chamar no WhatsApp
