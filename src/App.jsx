@@ -13,6 +13,7 @@ import { ParqueBanner } from "./ParqueBanner/ParqueBanner";
 import { CidadeArco } from "./CidadeArco/CidadeArco";
 import { Stand } from "./Stand/Stand";
 import { Solucoes } from "./Solucoes/Solucoes";
+import { Localizacao } from "./Localizacao/Localizacao";
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
       <CidadeArco />
       <Stand />
       <Solucoes />
+      <Localizacao />
     </>
   )
 }
