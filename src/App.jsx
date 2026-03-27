@@ -11,6 +11,8 @@ import { Parque } from "./Parque/Parque";
 import { Escolha } from "./Escolha/Escolha";
 import { ParqueBanner } from "./ParqueBanner/ParqueBanner";
 import { CidadeArco } from "./CidadeArco/CidadeArco";
+import { Stand } from "./Stand/Stand";
+import { Solucoes } from "./Solucoes/Solucoes";
 
 
 function App() {
@@ -35,6 +37,8 @@ function App() {
       <ParqueBanner />
       <Parque />
       <CidadeArco />
+      <Stand />
+      <Solucoes />
     </>
   )
 }

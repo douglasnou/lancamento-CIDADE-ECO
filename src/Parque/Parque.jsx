@@ -83,13 +83,11 @@ export function Parque() {
                             loop={true}
                             className={styled.imgList}
                         >
-                            {/* Remova a <ul> daqui */}
                             {images.map((item, index) => (
                                 <SwiperSlide key={index}>
                                     <img src={item} alt="imagens da cidade eco" />
                                 </SwiperSlide>
                             ))}
-                            {/* E remova o </ul> daqui */}
                         </Swiper>
                 }
 

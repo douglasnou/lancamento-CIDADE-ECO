@@ -1,0 +1,90 @@
+.stand {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--main-font);
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .banner {
+            width: 100%;
+        }
+
+        .subContainer {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #B8C429;
+
+            .sub {
+                width: 80%;
+                margin: 40px auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .text{
+                    width: 40%;
+                    gap: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    h2{
+                        font-size: 3rem;
+                        color: #005A32;
+                    }
+                    p{
+                        font-size: 1rem;
+                        color: #005A32;
+                        line-height: 25px;
+                        padding: 15px;
+                    }
+                    .white{
+                        background: #ffffff;
+                    }
+                }
+                .slide{
+                    width: 50%;
+                    .item{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 800px){
+    .stand{
+        .container{
+            .subContainer{
+                flex-direction: column;
+                .sub{
+                    width: 100%;
+                    flex-direction: column;
+                    gap: 20px;
+                    .text{
+                        width: 90%;
+                        h2{
+                            font-size: 2rem;
+                            padding: 15px;
+                        }
+                    }
+                    .slide{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
