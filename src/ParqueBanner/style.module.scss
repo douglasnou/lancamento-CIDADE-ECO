@@ -1,0 +1,70 @@
+.parqueBanner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .container {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .btn {
+        position: absolute;
+        top: 70%;
+        right: 5%;
+        width: 450px;
+        height: 66px;
+        background: #093321BA;
+        border-radius: 15px;
+        box-shadow: 0px 2px 2px 2px #00000040;
+        font-family: var(--main-font);
+
+        &:hover {
+            box-shadow: 0px 2px 2px 2px #DCEE0E;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            span {
+                color: #DCEE0E;
+                font-size: 1.25rem;
+                font-weight: 800;
+            }
+
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    .parqueBanner {
+        align-items: center;
+
+        .container {
+            align-items: center;
+
+        }
+
+        .btn {
+            position: static; // Remove a flutuação e volta para o fluxo normal
+            margin: 20px auto; // Adiciona um espaçamento após a imagem
+            width: 90%;
+            height: auto; // Permite que o botão se ajuste se o texto quebrar
+            padding: 15px 0;
+            background: #006D35;
+            a{
+                span{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

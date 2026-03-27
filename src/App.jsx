@@ -9,6 +9,8 @@ import { Lote } from "./Lote/Lote";
 import { Cidade } from "./Cidade/Cidade";
 import { Parque } from "./Parque/Parque";
 import { Escolha } from "./Escolha/Escolha";
+import { ParqueBanner } from "./ParqueBanner/ParqueBanner";
+import { CidadeArco } from "./CidadeArco/CidadeArco";
 
 
 function App() {
@@ -30,7 +32,9 @@ function App() {
       <Lugar />
       <Lote />
       <Escolha />
+      <ParqueBanner />
       <Parque />
+      <CidadeArco />
     </>
   )
 }

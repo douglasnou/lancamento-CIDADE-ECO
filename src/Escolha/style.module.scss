@@ -21,6 +21,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+
             span {
                 font-size: 2rem;
                 font-weight: 600;
@@ -39,12 +40,47 @@
             }
         }
     }
-    img{
+
+    img {
         margin: 30px auto;
-            width: 60%;
-        }
+        width: 60%;
+    }
 }
 
-@media(max-width: 800px){
-    
+@media(max-width: 800px) {
+    .escolha {
+        .container {
+            .textContainer {
+                width: 80%;
+
+                span {
+                    font-size: 1rem;
+                }
+
+                h2 {
+                    font-size: 1.25rem;
+                }
+            }
+
+        }
+
+        .imgList {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            li {
+                width: 30%;
+                height: auto;
+
+                img {
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+        }
+    }
 }
