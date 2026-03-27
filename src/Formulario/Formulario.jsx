@@ -11,11 +11,11 @@ export function Formulario() {
         e.preventDefault();
         
         // Mensagem base que você solicitou
-        const mensagem = `Olá! Tudo bem? Sou ${nome} e fiquei interessado(a) na Cidade ECO Pedreiras. Estou buscando ${investimento} e queria saber mais detalhes.`;
+        const mensagem = `Olá😊! Me chamo ${nome} e quero garantir meu lote na Cidade ECO Pedreiras. Tpo de investimento: ${investimento} e queria saber mais detalhes.`;
         
         // Codifica a mensagem para URL
         const msgEncoded = encodeURIComponent(mensagem);
-        const url = `https://wa.me/5598985243214?text=${msgEncoded}`;
+        const url = `https://wa.me/5598991120576?text=${msgEncoded}`;
         
         window.open(url, '_blank');
     };
